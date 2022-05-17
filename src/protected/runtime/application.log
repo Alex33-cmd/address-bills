@@ -1,0 +1,200 @@
+2022/05/17 22:24:49 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/17 23:32:14 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/18 00:13:16 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/18 00:16:21 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/18 00:20:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adrbllDB.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2022/05/18 00:20:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY (dom) REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAUL' at line 3. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`dom` FOREIGN KEY (dom) REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',
+	`usluga` VARCHAR (80) NOT NULL DEFAULT '',
+	`data` DATE NOT NULL
+).
+2022/05/18 00:20:33 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY (dom) REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAUL' at line 3. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`dom` FOREIGN KEY (dom) REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',
+	`usluga` VARCHAR (80) NOT NULL DEFAULT '',
+	`data` DATE NOT NULL
+) in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(16): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/18 00:34:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adrbllDB.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2022/05/18 00:34:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',' at line 3. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`dom` FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',
+	`usluga` VARCHAR (80) NOT NULL DEFAULT '',
+	`data` DATE NOT NULL
+).
+2022/05/18 00:34:44 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',' at line 3. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`dom` FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',
+	`usluga` VARCHAR (80) NOT NULL DEFAULT '',
+	`data` DATE NOT NULL
+) in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(16): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/18 00:35:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL DEFAULT '',
+	`dom` INTEGER (3) NOT NULL DEFAULT '0',
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL DEFAULT '0'
+).
+2022/05/18 00:35:42 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL DEFAULT '',
+	`dom` INTEGER (3) NOT NULL DEFAULT '0',
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL DEFAULT '0'
+) in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(8): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/18 00:36:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adrbllDB.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2022/05/18 00:36:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',' at line 3. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`dom` INTEGER (3) FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',
+	`usluga` VARCHAR (80) NOT NULL DEFAULT '',
+	`data` DATE NOT NULL
+).
+2022/05/18 00:36:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',' at line 3. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`dom` INTEGER (3) FOREIGN KEY REFERENCES address(dom),
+	`nomer` INTEGER (10) NOT NULL DEFAULT '0',
+	`usluga` VARCHAR (80) NOT NULL DEFAULT '',
+	`data` DATE NOT NULL
+) in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(16): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/18 00:37:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adrbllDB.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
