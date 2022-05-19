@@ -14,7 +14,6 @@ services:
       - ./src:/var/www/html
       - ./yii:/var/www/yii
       - ./docker/nginx/conf.d:/etc/nginx/conf.d
-      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     ports:
       - "8080:80"
  # Php-fpm configuration
@@ -24,8 +23,6 @@ services:
     volumes:
       - ./src:/var/www/html
       - ./yii:/var/www/yii
-      - ./docker/php/php.ini:/usr/local/etc/php/php.ini-production
-      # - ./docker/php/php.ini:/usr/local/etc/php/php.ini
  # Mysql configuration
   mysql:
     image: mysql:8
