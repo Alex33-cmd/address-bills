@@ -198,3 +198,287 @@ Stack trace:
 #12 {main}
 ---
 2022/05/18 00:37:04 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adrbllDB.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2022/05/22 21:12:10 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 21:12:56 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 21:17:13 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 21:22:34 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 21:29:07 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 21:35:16 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1698] Access denied for user 'root'@'localhost' in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 21:53:44 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.23.0.1' (using password: YES) in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 22:02:57 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.24.0.1' (using password: YES) in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 22:19:07 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.25.0.1' (using password: YES) in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 22:29:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'172.26.0.1' (using password: YES) in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/22 23:13:35 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---
+2022/05/23 19:07:40 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'test'@'localhost' (using password: YES) in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(128): MigrateCommand->getMigrationHistory()
+#6 [internal function]: MigrateCommand->actionDown()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#10 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#11 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#12 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#13 {main}
+---
+2022/05/23 19:10:12 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2006] MySQL server has gone away in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(128): MigrateCommand->getMigrationHistory()
+#6 [internal function]: MigrateCommand->actionDown()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#10 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#11 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#12 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#13 {main}
+---
+2022/05/23 19:38:19 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(128): MigrateCommand->getMigrationHistory()
+#6 [internal function]: MigrateCommand->actionDown()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#10 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#11 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#12 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#13 {main}
+---
+2022/05/23 19:38:29 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'test'@'localhost' (using password: YES) in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(128): MigrateCommand->getMigrationHistory()
+#6 [internal function]: MigrateCommand->actionDown()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#10 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#11 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#12 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#13 {main}
+---
+2022/05/23 19:43:26 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/alex/www/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/alex/www/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#14 {main}
+---

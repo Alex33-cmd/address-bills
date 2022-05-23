@@ -5,10 +5,10 @@ services:
     image: nginx:latest
     container_name: webserver
     depends_on:
-      - mysql
+      - db
       - php
     links:
-      - mysql
+      - db
       - php
     volumes:
       - ./src:/var/www/html
@@ -18,23 +18,32 @@ services:
       - "8080:80"
  # Php-fpm configuration
   php:
-    image: php:7.4-fpm
+    # image: php:7.4-fpm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: result/latest
     container_name: php
+    links:
+      - db
     volumes:
       - ./src:/var/www/html
+      - ./php:/usr/local/etc/php/php.ini
       - ./yii:/var/www/yii
  # Mysql configuration
-  mysql:
+  db:
     image: mysql:8
-    container_name: mysql
-    # command: --default-authentication-plugin=mysql_native_password
+    container_name: db
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
         - MYSQL_DATABASE=adrbllDB
+        - MYSQL_ROOT_PASSWORD=root
         - MYSQL_USER=test
         - MYSQL_PASSWORD=password
-        - MYSQL_ROOT_PASSWORD=root
     ports:
-        - 3306:3306
+        - 3308:3306
     volumes:
         - /dbdata:/var/lib/mysql
+volumes:
+  Dbdata:

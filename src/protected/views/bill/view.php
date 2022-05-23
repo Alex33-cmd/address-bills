@@ -22,6 +22,7 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
+		'foreign_id',
 		'dom',
 		'nomer',
 		'usluga',

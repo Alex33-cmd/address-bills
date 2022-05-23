@@ -5,10 +5,14 @@
  *
  * The followings are the available columns in table 'bill':
  * @property integer $id
+ * @property integer $foreign_id
  * @property integer $dom
  * @property integer $nomer
  * @property string $usluga
  * @property string $data
+ *
+ * The followings are the available model relations:
+ * @property Address $foreign
  */
 class Bill extends CActiveRecord
 {
@@ -29,11 +33,11 @@ class Bill extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('data', 'required'),
-			array('dom, nomer', 'numerical', 'integerOnly'=>true),
+			array('foreign_id, dom, nomer', 'numerical', 'integerOnly'=>true),
 			array('usluga', 'length', 'max'=>80),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, dom, nomer, usluga, data', 'safe', 'on'=>'search'),
+			array('id, foreign_id, dom, nomer, usluga, data', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,6 +49,7 @@ class Bill extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'foreign' => array(self::BELONGS_TO, 'Address', 'foreign_id'),
 		);
 	}
 
@@ -55,6 +60,7 @@ class Bill extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'foreign_id' => 'Foreign',
 			'dom' => 'Dom',
 			'nomer' => 'Nomer',
 			'usluga' => 'Usluga',
@@ -81,6 +87,7 @@ class Bill extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('foreign_id',$this->foreign_id);
 		$criteria->compare('dom',$this->dom);
 		$criteria->compare('nomer',$this->nomer);
 		$criteria->compare('usluga',$this->usluga,true);

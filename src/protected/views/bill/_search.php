@@ -17,6 +17,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'foreign_id'); ?>
+		<?php echo $form->textField($model,'foreign_id'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'dom'); ?>
 		<?php echo $form->textField($model,'dom'); ?>
 	</div>

@@ -10,6 +10,9 @@
  * @property integer $dom
  * @property string $korpus
  * @property integer $kvartira
+ *
+ * The followings are the available model relations:
+ * @property Bill[] $bills
  */
 class Address extends CActiveRecord
 {
@@ -47,6 +50,7 @@ class Address extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'bills' => array(self::HAS_MANY, 'Bill', 'foreign_id'),
 		);
 	}
 
