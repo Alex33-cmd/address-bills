@@ -50,7 +50,7 @@ class Address extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'bills' => array(self::HAS_MANY, 'Bill', 'foreign_id'),
+			'bills' => array(self::HAS_MANY, 'Bill', 'foreignID'),
 		);
 	}
 
@@ -60,12 +60,12 @@ class Address extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'gorod' => 'Gorod',
-			'adres' => 'Adres',
-			'dom' => 'Dom',
-			'korpus' => 'Korpus',
-			'kvartira' => 'Kvartira',
+			'id' => 'ID адреса',
+			'gorod' => 'Город',
+			'adres' => 'Адрес',
+			'dom' => 'Дом',
+			'korpus' => 'Корпус',
+			'kvartira' => 'Квартира',
 		);
 	}
 

@@ -9,12 +9,8 @@
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('foreign_id')); ?>:</b>
-	<?php echo CHtml::encode($data->foreign_id); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('dom')); ?>:</b>
-	<?php echo CHtml::encode($data->dom); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('foreignID')); ?>:</b>
+	<?php echo CHtml::encode($data->foreignID); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('nomer')); ?>:</b>

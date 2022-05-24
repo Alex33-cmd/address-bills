@@ -17,13 +17,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'foreign_id'); ?>
-		<?php echo $form->textField($model,'foreign_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'dom'); ?>
-		<?php echo $form->textField($model,'dom'); ?>
+		<?php echo $form->label($model,'foreignID'); ?>
+		<?php echo $form->textField($model,'foreignID'); ?>
 	</div>
 
 	<div class="row">

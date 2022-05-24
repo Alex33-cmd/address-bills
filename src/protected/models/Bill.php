@@ -5,8 +5,7 @@
  *
  * The followings are the available columns in table 'bill':
  * @property integer $id
- * @property integer $foreign_id
- * @property integer $dom
+ * @property integer $foreignID
  * @property integer $nomer
  * @property string $usluga
  * @property string $data
@@ -33,11 +32,11 @@ class Bill extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('data', 'required'),
-			array('foreign_id, dom, nomer', 'numerical', 'integerOnly'=>true),
+			array('foreignID, nomer', 'numerical', 'integerOnly'=>true),
 			array('usluga', 'length', 'max'=>80),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, foreign_id, dom, nomer, usluga, data', 'safe', 'on'=>'search'),
+			array('foreignID, nomer, usluga, data', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,7 +48,7 @@ class Bill extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'foreign' => array(self::BELONGS_TO, 'Address', 'foreign_id'),
+			'foreign' => array(self::BELONGS_TO, 'Address', 'foreignID'),
 		);
 	}
 
@@ -59,12 +58,11 @@ class Bill extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'foreign_id' => 'Foreign',
-			'dom' => 'Dom',
-			'nomer' => 'Nomer',
-			'usluga' => 'Usluga',
-			'data' => 'Data',
+			// 'id' => 'ID',
+			'foreignID' => 'ID адреса',
+			'nomer' => 'Номер счёта',
+			'usluga' => 'Наименование услуги',
+			'data' => 'Дата',
 		);
 	}
 
@@ -86,9 +84,8 @@ class Bill extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('foreign_id',$this->foreign_id);
-		$criteria->compare('dom',$this->dom);
+		// $criteria->compare('id',$this->id);
+		$criteria->compare('foreignID',$this->foreignID);
 		$criteria->compare('nomer',$this->nomer);
 		$criteria->compare('usluga',$this->usluga,true);
 		$criteria->compare('data',$this->data,true);
