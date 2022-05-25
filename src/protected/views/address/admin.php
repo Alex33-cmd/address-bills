@@ -3,8 +3,8 @@
 /* @var $model Address */
 
 $this->breadcrumbs=array(
-	'Addresses'=>array('index'),
-	'Manage',
+	'Адреса'=>array('index'),
+	'Управление',
 );
 
 $this->menu=array(
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Addresses</h1>
+<h1>Управление адресами</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

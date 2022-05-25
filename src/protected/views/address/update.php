@@ -3,19 +3,19 @@
 /* @var $model Address */
 
 $this->breadcrumbs=array(
-	'Addresses'=>array('index'),
+	'Адреса'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Изменить',
 );
 
 $this->menu=array(
-	array('label'=>'List Address', 'url'=>array('index')),
-	array('label'=>'Create Address', 'url'=>array('create')),
-	array('label'=>'View Address', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Address', 'url'=>array('admin')),
+	array('label'=>'Список адресов', 'url'=>array('index')),
+	array('label'=>'Добавить адрес', 'url'=>array('create')),
+	array('label'=>'Просмотр адреса', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Управление адресами', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Address <?php echo $model->id; ?></h1>
+<h1>Изменить адрес <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

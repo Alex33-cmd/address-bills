@@ -5,13 +5,13 @@
 
 $this->pageTitle=Yii::app()->name . ' - Login';
 $this->breadcrumbs=array(
-	'Login',
+	'Вход',
 );
 ?>
 
-<h1>Login</h1>
+<h1>Вход</h1>
 
-<p>Please fill out the following form with your login credentials:</p>
+<p>Пожалуйста войдите при помощи имени пользователя и пароля:</p>
 
 <div class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -22,7 +22,7 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Поля со знаком <span class="required">*</span> являются обязательными.</p>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'username'); ?>
@@ -35,7 +35,7 @@ $this->breadcrumbs=array(
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
+			Подсказка: Можно войти с <kbd>demo</kbd>/<kbd>demo</kbd> или <kbd>admin</kbd>/<kbd>admin</kbd>.
 		</p>
 	</div>
 

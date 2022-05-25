@@ -3,16 +3,16 @@
 /* @var $model Bill */
 
 $this->breadcrumbs=array(
-	'Bills'=>array('index'),
-	'Create',
+	'Счета'=>array('index'),
+	'Добавить',
 );
 
 $this->menu=array(
-	array('label'=>'List Bill', 'url'=>array('index')),
-	array('label'=>'Manage Bill', 'url'=>array('admin')),
+	array('label'=>'Список счетов', 'url'=>array('index')),
+	array('label'=>'Управление счетами', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Bill</h1>
+<h1>Добавить Счет</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

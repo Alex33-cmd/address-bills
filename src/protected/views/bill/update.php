@@ -3,16 +3,16 @@
 /* @var $model Bill */
 
 $this->breadcrumbs=array(
-	'Bills'=>array('index'),
+	'Счета'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Изменить',
 );
 
 $this->menu=array(
-	array('label'=>'List Bill', 'url'=>array('index')),
-	array('label'=>'Create Bill', 'url'=>array('create')),
-	array('label'=>'View Bill', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Bill', 'url'=>array('admin')),
+	array('label'=>'Список счетов', 'url'=>array('index')),
+	array('label'=>'Добавить счет', 'url'=>array('create')),
+	array('label'=>'Просмотр счета', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Управление счетами', 'url'=>array('admin')),
 );
 ?>
 

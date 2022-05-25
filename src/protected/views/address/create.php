@@ -3,16 +3,16 @@
 /* @var $model Address */
 
 $this->breadcrumbs=array(
-	'Addresses'=>array('index'),
-	'Create',
+	'Адреса'=>array('index'),
+	'Создать',
 );
 
 $this->menu=array(
-	array('label'=>'List Address', 'url'=>array('index')),
-	array('label'=>'Manage Address', 'url'=>array('admin')),
+	array('label'=>'Список адресов', 'url'=>array('index')),
+	array('label'=>'Управление адресами', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Address</h1>
+<h1>Добавить адрес</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
