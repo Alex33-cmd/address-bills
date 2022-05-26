@@ -9,6 +9,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 	array('label'=>'Добавить адрес', 'url'=>array('create')),
 	array('label'=>'Управление адресами', 'url'=>array('admin')),
+	array('label'=>'Тест', 'url'=>array('test')),
 );
 ?>
 

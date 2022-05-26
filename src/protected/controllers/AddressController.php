@@ -28,7 +28,7 @@ class AddressController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','test'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -43,6 +43,17 @@ class AddressController extends Controller
 				'users'=>array('*'),
 			),
 		);
+	}
+
+	/**
+	 * Test
+	 */
+	public function actionTest()
+	{
+		// $this->render('test',array(
+		// ));
+		$dataProvider=new CActiveDataProvider('Address');
+		$this->render('test',array());
 	}
 
 	/**
