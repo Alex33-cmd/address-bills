@@ -12,16 +12,18 @@
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 )); ?>
 
 	<p class="note">Поля со знаком <span class="required">*</span> являются обязательными.</p>
 
+	<!-- big red box when submitting empty forms -->
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'gorod'); ?>
 		<?php echo $form->textField($model,'gorod',array('size'=>50,'maxlength'=>50)); ?>
+		<!-- hidden message shown on error -->
 		<?php echo $form->error($model,'gorod'); ?>
 	</div>
 

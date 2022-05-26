@@ -50,10 +50,18 @@ class AddressController extends Controller
 	 */
 	public function actionTest()
 	{
+		// $this->render('test',array('model'=>'some test string'));
+
+		// $model = new Address;
+		// $model->gorod = 'SPb';
 		// $this->render('test',array(
+		// 	'model'=>$model,
 		// ));
-		$dataProvider=new CActiveDataProvider('Address');
-		$this->render('test',array());
+
+		$model = Address::model()->find('gorod = :param', array('param'=>'Санкт-Петербург'));
+		$this->render('test',array(
+			'model'=>$model,
+		));
 	}
 
 	/**
@@ -76,7 +84,7 @@ class AddressController extends Controller
 		$model=new Address;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Address']))
 		{
@@ -100,7 +108,7 @@ class AddressController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Address']))
 		{

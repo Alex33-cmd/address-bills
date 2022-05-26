@@ -1,5 +1,6 @@
 <?php
 /* @var $this AddressController */
+/* @var $model Address */
 
 $this->breadcrumbs=array(
 	'Адреса'=>array('index'), 
@@ -12,3 +13,9 @@ $this->menu=array(
 ?>
 
 <h1>Test</h1>
+
+<?php
+    if (isset($model)) {
+        echo var_dump($model);
+    };
+?>
