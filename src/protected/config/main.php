@@ -39,16 +39,23 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		/*
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName' => false,
+            'caseSensitive' => true,
 			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				//API
+                array('api/list', 'pattern'=>'api/bill', 'verb'=>'GET'),
+                array('api/view', 'pattern'=>'api/bill/<id:\d+>', 'verb'=>'GET'),
+                // array('api/update', 'pattern'=>'api/bill/<id:\d+>', 'verb'=>'PUT'),
+                // array('api/delete', 'pattern'=>'api/bill/<id:\d+>', 'verb'=>'DELETE'),
+                // array('api/create', 'pattern'=>'api/bill', 'verb'=>'POST'),
+
+				// '<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				// '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
+				// '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
 
 		// database settings are configured in database.php
 		'db'=>require(dirname(__FILE__).'/database.php'),
