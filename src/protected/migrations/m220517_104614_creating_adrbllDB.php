@@ -7,18 +7,18 @@ class m220517_104614_creating_adrbllDB extends CDbMigration
         $this->createTable('address', array(
             'id' => 'pk',
             'gorod' => 'VARCHAR (50) DEFAULT \'\'',
-            'adres' => 'VARCHAR (100) NOT NULL DEFAULT \'\'',
-            'dom' => 'INTEGER (3) NOT NULL DEFAULT \'0\'',
+            'adres' => 'VARCHAR (100) NOT NULL',
+            'dom' => 'VARCHAR (5) NOT NULL',
             'korpus' => 'VARCHAR (10) DEFAULT \'\'',
-            'kvartira' => 'INTEGER (5) NOT NULL DEFAULT \'0\''
+            'kvartira' => 'INTEGER (5) NOT NULL'
         ),  'ENGINE=InnoDB CHARSET=utf8');
 
         $this->createTable('bill', array(
             'id' => 'pk',
-            'foreignID' => 'INTEGER (3)',
-            'nomer' => 'INTEGER (10) NOT NULL DEFAULT \'0\'',
-            'usluga' => 'VARCHAR (80) NOT NULL DEFAULT \'\'',
-            'data' => 'DATE NOT NULL'
+            'foreignID' => 'INTEGER (3) NOT NULL',
+            'nomer' => 'INTEGER (10) NOT NULL',
+            'usluga' => 'VARCHAR (80) DEFAULT \'\'',
+            'data' => 'timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP',
         ),  'ENGINE=InnoDB CHARSET=utf8'); 
 
         $this->addForeignKey('fk1', 'bill', 'foreignID', 'address', 'id','CASCADE','CASCADE');

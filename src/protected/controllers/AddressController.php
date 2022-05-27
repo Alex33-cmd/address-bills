@@ -50,18 +50,24 @@ class AddressController extends Controller
 	 */
 	public function actionTest()
 	{
-		// $this->render('test',array('model'=>'some test string'));
-
+		
 		// $model = new Address;
 		// $model->gorod = 'SPb';
 		// $this->render('test',array(
-		// 	'model'=>$model,
-		// ));
-
-		$model = Address::model()->find('gorod = :param', array('param'=>'Санкт-Петербург'));
-		$this->render('test',array(
-			'model'=>$model,
-		));
+			// 	'model'=>$model,
+			// ));
+			
+			// $model = Address::model()->find('gorod = :param', array('param'=>'Санкт-Петербург'));
+			// $this->render('test',array(
+				// 	'model'=>$model,
+				// ));
+				
+		$model = new Address;
+		$model->gorod = 'NYC';
+		if($model->validate()) {
+			$model->save();
+		}
+		$this->render('test',array('model'=>$model));
 	}
 
 	/**

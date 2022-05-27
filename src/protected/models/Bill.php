@@ -31,7 +31,7 @@ class Bill extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('data', 'required'),
+			array('foreignID, nomer', 'required'),
 			array('foreignID, nomer', 'numerical', 'integerOnly'=>true),
 			array('usluga', 'length', 'max'=>80),
 			// The following rule is used by search().
@@ -58,7 +58,7 @@ class Bill extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			// 'id' => 'ID',
+			'id' => 'ID счета',
 			'foreignID' => 'ID адреса',
 			'nomer' => 'Номер счёта',
 			'usluga' => 'Наименование услуги',

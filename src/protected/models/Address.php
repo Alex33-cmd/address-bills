@@ -32,7 +32,9 @@ class Address extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('dom, kvartira', 'numerical', 'integerOnly'=>true),
+			array('adres, dom, kvartira', 'required'),
+			array('kvartira', 'numerical', 'integerOnly'=>true),
+			array('dom', 'length', 'max'=>5),
 			array('gorod', 'length', 'max'=>50),
 			array('adres', 'length', 'max'=>100),
 			array('korpus', 'length', 'max'=>10),

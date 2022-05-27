@@ -630,3 +630,245 @@ Stack trace:
 #12 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
 #13 {main}
 ---
+2022/05/27 11:50:50 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'dom'. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL DEFAULT '',
+	`dom` INTEGER (3) NOT NULL DEFAULT '',
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL DEFAULT ''
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 11:50:50 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'dom'. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL DEFAULT '',
+	`dom` INTEGER (3) NOT NULL DEFAULT '',
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL DEFAULT ''
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(14): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 11:52:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'kvartira'. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL DEFAULT '',
+	`dom` VARCHAR (5) NOT NULL DEFAULT '',
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL DEFAULT ''
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 11:52:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'kvartira'. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL DEFAULT '',
+	`dom` VARCHAR (5) NOT NULL DEFAULT '',
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL DEFAULT ''
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(14): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 11:53:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'foreignID'. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`foreignID` INTEGER (3) NOT NULL DEFAULT '',
+	`nomer` INTEGER (10) NOT NULL DEFAULT '',
+	`usluga` VARCHAR (80) DEFAULT '',
+	`data` timestamp
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 11:53:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'foreignID'. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`foreignID` INTEGER (3) NOT NULL DEFAULT '',
+	`nomer` INTEGER (10) NOT NULL DEFAULT '',
+	`usluga` VARCHAR (80) DEFAULT '',
+	`data` timestamp
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(22): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 11:54:51 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL,
+	`dom` VARCHAR (5) NOT NULL,
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 11:54:51 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL,
+	`dom` VARCHAR (5) NOT NULL,
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(14): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 11:55:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL,
+	`dom` VARCHAR (5) NOT NULL,
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 11:55:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL,
+	`dom` VARCHAR (5) NOT NULL,
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(14): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 12:05:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ENGINE=InnoDB CHARSET=utf8' at line 7. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`foreignID` INTEGER (3) NOT NULL,
+	`nomer` INTEGER (10) NOT NULL,
+	`usluga` VARCHAR (80) DEFAULT '',
+	`data` timestamp DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 12:05:03 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') ENGINE=InnoDB CHARSET=utf8' at line 7. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`foreignID` INTEGER (3) NOT NULL,
+	`nomer` INTEGER (10) NOT NULL,
+	`usluga` VARCHAR (80) DEFAULT '',
+	`data` timestamp DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(22): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 12:06:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'data'. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`foreignID` INTEGER (3) NOT NULL,
+	`nomer` INTEGER (10) NOT NULL,
+	`usluga` VARCHAR (80) DEFAULT '',
+	`data` timestamp DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 12:06:23 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1067 Invalid default value for 'data'. The SQL statement executed was: CREATE TABLE `bill` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`foreignID` INTEGER (3) NOT NULL,
+	`nomer` INTEGER (10) NOT NULL,
+	`usluga` VARCHAR (80) DEFAULT '',
+	`data` timestamp DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(22): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---
+2022/05/27 12:06:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL,
+	`dom` VARCHAR (5) NOT NULL,
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8.
+2022/05/27 12:06:45 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'address' already exists. The SQL statement executed was: CREATE TABLE `address` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`gorod` VARCHAR (50) DEFAULT '',
+	`adres` VARCHAR (100) NOT NULL,
+	`dom` VARCHAR (5) NOT NULL,
+	`korpus` VARCHAR (10) DEFAULT '',
+	`kvartira` INTEGER (5) NOT NULL
+) ENGINE=InnoDB CHARSET=utf8 in /home/alex/www/address-bills/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/alex/www/address-bills/yii/framework/db/CDbCommand.php(1352): CDbCommand->execute()
+#1 /home/alex/www/address-bills/yii/framework/db/CDbMigration.php(250): CDbCommand->createTable()
+#2 /home/alex/www/address-bills/src/protected/migrations/m220517_104614_creating_adrbllDB.php(14): CDbMigration->createTable()
+#3 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(415): m220517_104614_creating_adrbllDB->up()
+#4 /home/alex/www/address-bills/yii/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#5 [internal function]: MigrateCommand->actionUp()
+#6 /home/alex/www/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#7 /home/alex/www/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#8 /home/alex/www/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#9 /home/alex/www/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#10 /home/alex/www/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
+#12 {main}
+---

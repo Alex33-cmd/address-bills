@@ -15,7 +15,11 @@ $this->menu=array(
 <h1>Test</h1>
 
 <?php
-    if (isset($model)) {
-        echo var_dump($model);
-    };
+    if (isset($model->errors)) {
+        foreach ($model->errors as $err) {
+            echo var_dump($err) . '<br>';
+        }
+    } else {
+        var_dump($model);
+    }
 ?>
