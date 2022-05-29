@@ -32,6 +32,7 @@
 				array('label'=>'Главная', 'url'=>array('/site/index')),
 				array('label'=>'Адреса', 'url'=>array('/address/index')),
 				array('label'=>'Счета', 'url'=>array('/bill/index')),
+				array('label'=>'Общий вид', 'url'=>array('/overview/index')),
 				array('label'=>'О компании', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Контакты', 'url'=>array('/site/contact')),
 				array('label'=>'Войти', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),

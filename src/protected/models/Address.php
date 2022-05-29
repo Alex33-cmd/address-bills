@@ -56,6 +56,11 @@ class Address extends CActiveRecord
 		);
 	}
 
+	// public function getBills()
+	// {
+	// 	return $this->hasMany(Bill::className(), ['id' => 'foreignID']);
+	// }
+
 	/**
 	 * @return array customized attribute labels (name=>label)
 	 */

@@ -48,9 +48,14 @@ class Bill extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'foreign' => array(self::BELONGS_TO, 'Address', 'foreignID'),
+			'foreign' => array(self::BELONGS_TO, 'Address', 'id'),
 		);
 	}
+
+	// public function getAddress()
+	// {
+	// 	return $this->hasOne(Address::className(), ['foreignID' => 'id']);
+	// }
 
 	/**
 	 * @return array customized attribute labels (name=>label)
