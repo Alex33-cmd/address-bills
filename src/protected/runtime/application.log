@@ -872,3 +872,76 @@ Stack trace:
 #11 /home/alex/www/address-bills/src/protected/yiic.php(7): require_once('/home/alex/www/...')
 #12 {main}
 ---
+2022/05/28 22:36:27 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/aleksandr/Projects_IT/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/aleksandr/Projects_IT/address-bills/src/protected/yiic.php(7): require_once('...')
+#14 {main}
+---
+2022/05/28 22:39:04 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/aleksandr/Projects_IT/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/aleksandr/Projects_IT/address-bills/src/protected/yiic.php(7): require_once('...')
+#14 {main}
+---
+2022/05/28 23:14:52 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/aleksandr/Projects_IT/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/aleksandr/Projects_IT/address-bills/src/protected/yiic.php(7): require_once('...')
+#14 {main}
+---
+2022/05/28 23:28:20 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: could not find driver in /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/aleksandr/Projects_IT/address-bills/yii/framework/db/CDbConnection.php(325): CDbConnection->setActive()
+#2 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(472): CModule->getComponent()
+#4 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(481): MigrateCommand->getDbConnection()
+#5 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(512): MigrateCommand->getMigrationHistory()
+#6 /home/aleksandr/Projects_IT/address-bills/yii/framework/cli/commands/MigrateCommand.php(84): MigrateCommand->getNewMigrations()
+#7 [internal function]: MigrateCommand->actionUp()
+#8 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommand.php(178): ReflectionMethod->invokeArgs()
+#9 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleCommandRunner.php(71): CConsoleCommand->run()
+#10 /home/aleksandr/Projects_IT/address-bills/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#11 /home/aleksandr/Projects_IT/address-bills/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#12 /home/aleksandr/Projects_IT/address-bills/yii/framework/yiic.php(33): CApplication->run()
+#13 /home/aleksandr/Projects_IT/address-bills/src/protected/yiic.php(7): require_once('...')
+#14 {main}
+---
+2022/05/28 23:29:24 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'adrbllDB.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
