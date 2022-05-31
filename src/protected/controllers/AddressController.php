@@ -45,30 +45,13 @@ class AddressController extends Controller
 		);
 	}
 
-	/**
-	 * Test
-	 */
-	public function actionTest()
-	{
-		
-		// $model = new Address;
-		// $model->gorod = 'SPb';
-		// $this->render('test',array(
-			// 	'model'=>$model,
-			// ));
-			
-			// $model = Address::model()->find('gorod = :param', array('param'=>'Санкт-Петербург'));
-			// $this->render('test',array(
-				// 	'model'=>$model,
-				// ));
-				
-		$model = new Address;
-		$model->gorod = 'NYC';
-		if($model->validate()) {
-			$model->save();
-		}
-		$this->render('test',array('model'=>$model));
-	}
+	// external action file
+	public function actions()
+    {
+        return array(
+            'test'=>'application.controllers.actions.TestAction',
+        );
+    }
 
 	/**
 	 * Displays a particular model.
